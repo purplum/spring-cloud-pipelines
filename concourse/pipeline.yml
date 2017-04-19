@@ -6,17 +6,21 @@ resources:
     uri: {{app-url}}
     branch: {{app-branch}}
     private_key: {{github-private-key}}
+    skip_ssl_verification: true
  - name: version
    type: git
    source:
     uri: {{app-url}}
     branch: version
     private_key: {{github-private-key}}
+    skip_ssl_verification: true
  - name: tools
    type: git
    source:
     uri: {{tools-scripts-url}}
     branch: {{tools-branch}}
+    private_key: {{github-private-key}}
+    skip_ssl_verification: true
  - name: m2
    type: docker-image
    source:
