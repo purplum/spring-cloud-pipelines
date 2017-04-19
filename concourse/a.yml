@@ -1,0 +1,70 @@
+# job parameters
+app-url: git@github.wdf.sap.corp:sfmobileauto/github-webhook.git
+app-branch: master
+tools-scripts-url: https://github.wdf.sap.corp/sfmobileauto/spring-cloud-pipeline.git
+tools-branch: master
+maven-local-dir: m2/rootfs
+
+redownload-infra: true
+redeploy-infra: true
+eureka-group-id: com.example.eureka
+eureka-artifact-id: github-eureka
+eureka-version: 0.0.1.M1
+stubrunner-group-id: com.example.github
+stubrunner-artifact-id: github-analytics-stub-runner-boot
+stubrunner-version: 0.0.1.M1
+
+# credentials (defaults are for PCF Dev)
+cf-hostname-uuid:
+cf-test-api-url: https://api.local.pcfdev.io
+cf-stage-api-url: https://api.local.pcfdev.io
+cf-prod-api-url: https://api.local.pcfdev.io
+cf-test-username: user
+cf-test-password: pass
+cf-test-org: pcfdev-org
+cf-test-space: pcfdev-space
+cf-stage-username: user
+cf-stage-password: pass
+cf-stage-org: pcfdev-org
+cf-stage-space: pcfdev-space
+cf-prod-username: user
+cf-prod-password: pass
+cf-prod-org: pcfdev-org
+cf-prod-space: pcfdev-space
+github-private-key: |-
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEowIBAAKCAQEAme1m9ZEm141C6ZAgCNjLSV6WQphtZ5kHJMqxZqM0Ri+zBdDu
+        CpPvbdOy3ZsRUf2ibGXjbq1YsE/ZNjBLfjFIQvEEqdwEYzTVnVJ82o6KO8pGiaI8
+        AD4jKtLE5ArXEBo7NdlZ8CWS2Twf2c4KQCBtxgjARuKjnYmfT89XV5Vgh9YXgrOK
+        Tpw4Ih/RaUuyMmxz4cEwHWzYoitdkaWijZTeDSaRjrj4wi1WNioAAClQKOQ6zBCQ
+        1blRncvCOHVOX0zzrqvMcYmy0DHNi6HLkWdgBebM2pU46W+CjQEL9r1yNbNIM304
+        AMgfdlTW1fDmtxqVxo2Nk6jR8yVvcSvWxis8nwIDAQABAoIBAG/U2R7EbFHioaCL
+        Q5rp1xfhDo4nrCS+O0Bxut106T+s3AX3u1oYDLXgPm1eggDtoxnaFJiOfIbsHEWQ
+        ZOiz6WopLVgzL0TcV+5KxccMFEZIOWM5aRpMCsTMCJwdfA6I4EfJN9yPj9cgJYva
+        c/wPE3HzXa6ibnjASex0GWLadh15P2ze+JAcr7Z6YX5sZQHLg6p3uIWWqOWX0DRf
+        kJIl7Bx2Yl43HL9yxGUKCdPY8HJOMAr4VWOAt7FXpIUMRv+a9XJKmbq0f6JR1FHj
+        tVD/vR3t0jpXsiWtmIBCWaijy4fw0/rK4+ESEF4NcFsqpM75QtmxqSYon4772suW
+        T0J14zECgYEAysnyq0u4aVUntWYuIAk4P3HHeVVno5P8ze5uiNVvu0LZ86TAPJuj
+        LJvm3MaqyT+H8KxfJr8ipN/1FaJf2TW+xf7MOXZ3mtS6C2y1wYwHFeJLYPIKF6fx
+        XaNOS3nYKsHjvQsdzy//PwOcpdH7SnV6NP7NijMx3AufFo0EbWv1WTUCgYEAwlFA
+        ltdVO529qo/tsLWonEfTlrrc5uDzSnYr7EGvkgeGZlaoCckC8U+Z0yLEzBRvJg/y
+        yqQ9NoVuYVUDJRLVkBqQ1CuF6fcYGwz/E5OlLzGJw5auI7X+X9oD/giU88Xa8T1C
+        6PYAaLNWDl2Xm0el2jMYjM2LtzR3d1Caq32ljQMCgYA6fOCG00IO70aSpTPsfXxB
+        oDleH2nS3h3t7zTmNlkRc4iVIxFm6aS4ewas6ofbn30/xxdyf3Ioh4eSg9CNP1kU
+        lhalBCwe9ffqz6HkftSUVT5UabrLc97DmRQ95JiaTG242nnwhfFiZVJK6TNHGHb0
+        zgDOOVHKG3f48xcx0A9leQKBgQC6T9ejCWHyoEL7p7aaCQNanM+2JQKq6CK9UWK5
+        yx1A4bAurYW+pBoLL2xo8VxJ5InRr9b2DtWWUgdMkYtLX6ye16nnlLd4Ze+Z+DMW
+        HSlzf4b8npvnJ5d3Zf0P9ECFHz7WsQtXfI9V1CV97qTvQJo4BWfTkT0V8ttc7k7u
+        gLFb6wKBgFyZyY5zfWwoSkOmczIPZTfRS2e8C5w3XyNsSpJWnv4IvAGRW7EDLUMJ
+        Ri+YysNNsp6orhC/0kp3pmaxvzV9jsJWpogdeleHP0bMZwvxm1Vj0p4+HWL51myU
+        fWKyrkPG6ntb/6JFsI1mFTk4SoeIBWOCox66uzslPYh/sgkUJux3
+        -----END RSA PRIVATE KEY-----
+git-email: allen.yin@sap.com
+git-name: Allen Yin
+
+# Artifactory / Nexus credentials (defaults are for Artifactory)
+m2-settings-repo-id: artifactory-local
+m2-settings-repo-username: admin
+m2-settings-repo-password: password
+
+repo-with-jars: http://10.58.91.94:8081/artifactory/libs-release-local
